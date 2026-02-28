@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sohaib Khattak - BS Computer Science student, Python Developer, AI/ML specialist. Certified in Agentic AI, Robotics Engineering, and Data Analytics. Explore my portfolio of projects and expertise.">
+    <meta name="keywords" content="Python Developer, AI/ML, Agentic AI, Robotics Engineering, Data Analytics, Web Developer, Portfolio">
+    <meta name="author" content="Sohaib Khattak">
+    <meta name="theme-color" content="#0F0F0F">
+
+    <!-- Google Analytics -->
+    <!-- TODO: Replace G-YOUR_MEASUREMENT_ID with your actual Google Analytics Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YOUR_MEASUREMENT_ID');
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Sohaib Khattak | Professional Portfolio">
+    <meta property="og:description" content="BS Computer Science student specializing in AI/ML, Agentic AI, and Robotics Engineering. View my projects and certifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sohaib-khattak.com">
+    <meta property="og:image" content="WhatsApp Image 2026-01-02 at 10.56.20 PM.jpeg">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sohaib Khattak | Professional Portfolio">
+    <meta name="twitter:description" content="Python Developer | AI/ML Specialist | Agentic AI | Robotics Engineering">
+    <meta name="twitter:image" content="WhatsApp Image 2026-01-02 at 10.56.20 PM.jpeg">
+
+    <title>Sohaib Khattak | Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sohaib Khattak",
+        "jobTitle": "Python Developer & AI/ML Specialist",
+        "description": "BS Computer Science student specializing in Agentic AI, Robotics Engineering, and Data Analytics",
+        "url": "https://sohaib-khattak.com",
+        "image": "WhatsApp Image 2026-01-02 at 10.56.20 PM.jpeg",
+        "email": "sohaibktk.9058@gmail.com",
+        "telephone": "+923259086590",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Peshawar",
+            "addressRegion": "Khyber Pakhtunkhwa",
+            "addressCountry": "Pakistan"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Abdul Wali Khan University Mardan"
+        },
+        "sameAs": [
+            "https://github.com/Sohaib-Khattak",
+            "https://www.linkedin.com/in/sohaib-khattak-b50497304/"
+        ],
+        "knowsAbout": [
+            "Python Programming",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Agentic AI",
+            "Robotics Engineering",
+            "Data Analytics",
+            "Web Development",
+            "Automation"
+        ]
+    }
+    </script>
+
+    <!-- EmailJS SDK -->
+    <!-- TODO: Replace YOUR_PUBLIC_KEY with your actual EmailJS Public Key from https://www.emailjs.com/ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY"); // Get this from EmailJS Dashboard → Account → General
+        })();
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SK</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#showreel">Showreel</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-image">
+                <img src="WhatsApp Image 2026-01-02 at 10.56.20 PM.jpeg" alt="Sohaib Khattak" class="profile-img" loading="eager">
+            </div>
+            <div class="hero-text">
+                <h1 class="fade-in">Sohaib Khattak</h1>
+                <h2 class="fade-in delay-1">BS Computer Science | Web Developer</h2>
+                <h3 class="fade-in delay-2">Certified Agentic & Robotics Engineering | Python | Data Analytics</h3>
+                <p class="fade-in delay-3">Passionate about building intelligent systems, automation workflows, and data-driven solutions</p>
+                <div class="hero-buttons fade-in delay-4">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="Sohaib Khattak Europass (1).pdf" download class="btn btn-secondary"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+                <div class="social-links fade-in delay-5">
+                    <a href="https://github.com/Sohaib-Khattak" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sohaib-khattak-b50497304/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohaibktk.9058@gmail.com&su=Hello%20Sohaib&body=Hi%20Sohaib,%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank" title="Email Me"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="grok-image-5ef61300-20f8-44ef-8bc0-ddfe36141c62.png" alt="Sohaib Khattak Office">
+                </div>
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I am a dedicated <strong>Python Developer</strong> and <strong>Computer Science student</strong> at Abdul Wali Khan University Mardan (AWKUM), with a passion for creating innovative solutions in the fields of <strong>Agentic AI</strong>, <strong>Robotics Engineering</strong>, and <strong>Data Analytics</strong>.</p>
+                    <p>With expertise in building AI models, automation workflows using n8n, and data visualization with PowerBI, I strive to bridge the gap between complex technology and practical applications.</p>
+                    <p>My journey involves continuous learning and experimentation with cutting-edge technologies to deliver impactful solutions that make a difference.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>BS Computer Science</p>
+                                <p style="font-size: 14px; color: var(--text-light);">Abdul Wali Khan University Mardan (2023 - 2027)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Certification</h4>
+                                <p>Agentic & Robotics Engineering</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 325 9086590</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Peshawar / Charsadda, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="8">0</h3>
+                    <p>Certifications</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="3">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>TypeScript</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>R (ggplot2)</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI & Automation</h3>
+                    <div class="skill-items">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Agentic AI Systems</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>AI Model Development</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>n8n Workflows</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Robotics Engineering</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Data Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>PowerBI</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Data Visualization</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>ggplot2</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Jupyter Notebook</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>HTML5</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>CSS3</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>JavaScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Responsive Design</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education Timeline</h2>
+            <p class="section-subtitle">My journey in technology and learning</p>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2023-2027">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - 2027</div>
+                        <h3>BS Computer Science</h3>
+                        <span class="timeline-date">Abdul Wali Khan University Mardan</span>
+                        <p>Pursuing undergraduate degree in Computer Science with focus on software development, AI, and data sciences. Active participation in coding competitions and tech communities.</p>
+                        <div class="timeline-skills">
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Software Engineering</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2024-2025">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 - 2025</div>
+                        <h3>Certified Agentic & Robotics Engineering</h3>
+                        <span class="timeline-date">PIAIC / CECOS</span>
+                        <p>Professional certification in cutting-edge AI and robotics technologies, focusing on autonomous systems and intelligent automation.</p>
+                        <div class="timeline-skills">
+                            <span>Agentic AI</span>
+                            <span>Robotics</span>
+                            <span>Autonomous Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>AI/ML Training</h3>
+                        <span class="timeline-date">University of Engineering & Technology, Peshawar</span>
+                        <p>Intensive training in machine learning algorithms, model development, and deployment strategies for real-world applications.</p>
+                        <div class="timeline-skills">
+                            <span>Machine Learning</span>
+                            <span>Deep Learning</span>
+                            <span>Model Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2023-Present">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - Present</div>
+                        <h3>GitHub Projects & Contributions</h3>
+                        <span class="timeline-date">Open Source & Personal Projects</span>
+                        <p>Active development of multiple repositories focusing on AI automation, data analytics, and agent systems.</p>
+                        <ul>
+                            <li><strong>khattak-automation-hub:</strong> n8n workflows and automation projects</li>
+                            <li><strong>SKILLS:</strong> Centralized skill files for AI agents across multiple domains</li>
+                            <li><strong>Agentic-AI-Documentary:</strong> Research and documentation on CLI-based autonomous agent systems</li>
+                            <li><strong>multiverse-insights-hub:</strong> TypeScript-based data insights project</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span>Python</span>
+                            <span>TypeScript</span>
+                            <span>n8n</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional certifications and achievements</p>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Database Structures and Management with MySQL</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> Meta</p>
+                        <p>Comprehensive certification in database design, SQL queries, normalization, transaction management, and relational database concepts for efficient data storage and retrieval.</p>
+                        <a href="https://coursera.org/verify/YFQXQXQXQXQX" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>AI For Everyone</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> Coursera - DeepLearning.AI</p>
+                        <p>Foundational understanding of artificial intelligence concepts, machine learning basics, AI strategy, and practical applications across various industries.</p>
+                        <a href="https://coursera.org/verify/YFQXQXQXQXQX" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Google Data Analytics</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> Google (via Coursera)</p>
+                        <p>Professional certification covering data cleaning, analysis, visualization with tools like spreadsheets, SQL, R, and Tableau for data-driven decision making.</p>
+                        <a href="https://coursera.org/verify/professional-certificate/YFQXQXQXQXQX" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Introduction to HTML, CSS & JavaScript</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> IBM (via Coursera)</p>
+                        <p>Foundational web development skills including HTML structure, CSS styling, responsive design, and JavaScript programming for interactive web applications.</p>
+                        <a href="https://coursera.org/verify/YFQXQXQXQXQX" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Crash Course on Python</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> Google</p>
+                        <p>Comprehensive Python training covering syntax, data structures, object-oriented programming, file handling, and libraries for software development and automation.</p>
+                        <a href="https://coursera.org/verify/YFQXQXQXQXQX" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>n8n Workflow Automation</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> n8n Academy</p>
+                        <p>Advanced certification in building automated workflows using n8n, integrating APIs, creating custom nodes, and designing efficient automation solutions.</p>
+                        <a href="https://academy.n8n.io/certificates/your-certificate" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>AI/ML Training</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> University of Engineering & Technology, Peshawar</p>
+                        <p>In-depth training in machine learning algorithms, supervised and unsupervised learning, model training, evaluation, and deployment for predictive analytics.</p>
+                        <a href="https://uetpeshawar.edu.pk/verify/certificate" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-info">
+                        <h3>Cloud Computing</h3>
+                        <p class="certificate-org"><i class="fas fa-university"></i> AWS Student Community</p>
+                        <p>Comprehensive training in cloud infrastructure, virtualization, cloud service models (IaaS, PaaS, SaaS), deployment strategies, and cloud security principles.</p>
+                        <a href="https://aws.amazon.com/education/awseducate/" target="_blank" class="btn-certificate">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-subtitle">What people say about my work</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Dr. Muhammad Ali</h4>
+                            <p>Professor, AWKUM</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Sohaib is an exceptional student with a strong grasp of AI and machine learning concepts. His dedication to learning and problem-solving skills are remarkable."</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>Tech Lead, Startup</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Working with Sohaib on automation projects was a great experience. His expertise in n8n workflows and Python automation saved us countless hours."</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Ahmed</h4>
+                            <p>Data Analyst</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Sohaib's data visualization skills are outstanding. He helped us create insightful PowerBI dashboards that transformed our decision-making process."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306B6D4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230E7490;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad1)' width='400' height='250'/%3E%3Ccircle cx='80' cy='80' r='40' fill='%23ffffff' opacity='0.1'/%3E%3Ccircle cx='320' cy='180' r='60' fill='%23ffffff' opacity='0.1'/%3E%3Ctext x='50%25' y='40%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='%23ffffff'%3E%F0%9F%A4%96%3C/text%3E%3Ctext x='50%25' y='70%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='%23ffffff'%3EAgentic AI%3C/text%3E%3Ctext x='50%25' y='85%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='12' fill='%23E0F2FE'%3EAutonomous Systems%3C/text%3E%3C/svg%3E" alt="Agentic AI Documentary" loading="lazy">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Agentic AI Documentary</h3>
+                    <p>Comprehensive documentation of research, architectures, implementations, and case studies related to CLI-based autonomous agent systems.</p>
+                    <div class="project-tags">
+                        <span>AI Agents</span>
+                        <span>Documentation</span>
+                        <span>Research</span>
+                    </div>
+                    <a href="https://github.com/Sohaib-Khattak/Agentic-AI-Documentary-" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306B6D4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230891B2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad2)' width='400' height='250'/%3E%3Crect x='50' y='60' width='300' height='130' fill='none' stroke='%23ffffff' stroke-width='2' rx='10'/%3E%3Cline x1='80' y1='90' x2='320' y2='90' stroke='%23ffffff' stroke-width='2'/%3E%3Ccircle cx='100' cy='140' r='8' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='160' r='8' fill='%23ffffff'/%3E%3Ccircle cx='200' cy='130' r='8' fill='%23ffffff'/%3E%3Ccircle cx='250' cy='150' r='8' fill='%23ffffff'/%3E%3Cline x1='100' y1='140' x2='150' y2='160' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cline x1='150' y1='160' x2='200' y2='130' stroke='%23ffffff' stroke-width='1.5'/%3E%3Cline x1='200' y1='130' x2='250' y2='150' stroke='%23ffffff' stroke-width='1.5'/%3E%3Ctext x='50%25' y='25%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='%23ffffff'%3EAutomation Hub%3C/text%3E%3C/svg%3E" alt="Automation Hub" loading="lazy">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Automation Hub</h3>
+                    <p>Collection of n8n workflows and automation projects designed to streamline processes and improve efficiency.</p>
+                    <div class="project-tags">
+                        <span>n8n</span>
+                        <span>Automation</span>
+                        <span>Workflows</span>
+                    </div>
+                    <a href="https://github.com/Sohaib-Khattak/khattak-automation-hub" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='grad3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306B6D4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230E7490;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad3)' width='400' height='250'/%3E%3Ccircle cx='100' cy='100' r='35' fill='%23ffffff' opacity='0.2'/%3E%3Ccircle cx='300' cy='150' r='45' fill='%23ffffff' opacity='0.15'/%3E%3Ctext x='50%25' y='35%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='%23ffffff'%3E%F0%9F%A7%A0%3C/text%3E%3Ctext x='50%25' y='65%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='20' font-weight='bold' fill='%23ffffff'%3ESKILLS%3C/text%3E%3Ctext x='50%25' y='82%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='12' fill='%23E0F2FE'%3EMulti-Domain Repository%3C/text%3E%3C/svg%3E" alt="SKILLS Repository" loading="lazy">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>SKILLS Repository</h3>
+                    <p>Centralized repository containing skill files created for AI agents across multiple domains and use cases.</p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Skill Development</span>
+                        <span>Multi-domain</span>
+                    </div>
+                    <a href="https://github.com/Sohaib-Khattak/SKILLS" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='grad4' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2306B6D4;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%230891B2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad4)' width='400' height='250'/%3E%3Cpath d='M 80 180 L 150 80 L 220 140 L 290 60' stroke='%23ffffff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='80' cy='180' r='6' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='80' r='6' fill='%23ffffff'/%3E%3Ccircle cx='220' cy='140' r='6' fill='%23ffffff'/%3E%3Ccircle cx='290' cy='60' r='6' fill='%23ffffff'/%3E%3Ctext x='50%25' y='25%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' font-weight='bold' fill='%23ffffff'%3EMultiverse Insights%3C/text%3E%3C/svg%3E" alt="Multiverse Insights Hub" loading="lazy">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Multiverse Insights Hub</h3>
+                    <p>TypeScript-based project for data insights and analytics across multiple dimensions.</p>
+                    <div class="project-tags">
+                        <span>TypeScript</span>
+                        <span>Analytics</span>
+                        <span>Data</span>
+                    </div>
+                    <a href="https://github.com/Sohaib-Khattak/multiverse-insights-hub" target="_blank" class="project-link">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Insights and tutorials on AI, automation, and development</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23D4AF37' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23fff'%3EAgentic AI%3C/text%3E%3C/svg%3E" alt="Agentic AI" loading="lazy">
+                        <div class="blog-category">AI</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 28, 2026</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3>Building Autonomous AI Agents with Python</h3>
+                        <p>Explore how to create intelligent autonomous agents that can perform complex tasks using modern AI frameworks and techniques.</p>
+                        <a href="https://github.com/Sohaib-Khattak/Agentic-AI-Documentary-" target="_blank" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%232563eb' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23fff'%3EAutomation%3C/text%3E%3C/svg%3E" alt="Automation" loading="lazy">
+                        <div class="blog-category">Automation</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 25, 2026</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3>Mastering n8n Workflow Automation</h3>
+                        <p>A comprehensive guide to building powerful automation workflows with n8n, from basic concepts to advanced integrations.</p>
+                        <a href="https://github.com/Sohaib-Khattak/khattak-automation-hub" target="_blank" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%2310b981' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23fff'%3EData Analytics%3C/text%3E%3C/svg%3E" alt="Data Analytics" loading="lazy">
+                        <div class="blog-category">Data</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Feb 20, 2026</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3>Data Visualization Best Practices with PowerBI</h3>
+                        <p>Learn how to create compelling and insightful data visualizations that drive better business decisions using PowerBI.</p>
+                        <a href="https://github.com/Sohaib-Khattak" target="_blank" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="showreel">
+        <div class="container">
+            <h2 class="section-title">Professional Showreel</h2>
+            <p class="section-subtitle">A curated showcase of my work and expertise</p>
+
+            <div class="showreel-container">
+                <div class="video-player-wrapper">
+                    <video id="mainVideo" controls preload="metadata">
+                        <source src="scene 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="video-controls">
+                    <button id="playPauseBtn" class="control-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="stopBtn" class="control-btn">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                    <div class="volume-control">
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="100">
+                    </div>
+                </div>
+
+                <div id="playbackStatus" class="playback-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Peshawar / Charsadda, Pakistan</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+923259086590">+92 325 9086590</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohaibktk.9058@gmail.com&su=Hello%20Sohaib&body=Hi%20Sohaib,%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank">sohaibktk.9058@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Sohaib-Khattak" target="_blank">github.com/Sohaib-Khattak</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/sohaib-khattak-b50497304/" target="_blank">linkedin.com/in/sohaib-khattak</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="from_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Sohaib Khattak</h3>
+                    <p>Building the future with code and innovation</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Sohaib-Khattak" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sohaib-khattak-b50497304/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sohaibktk.9058@gmail.com&su=Hello%20Sohaib&body=Hi%20Sohaib,%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sohaib Khattak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
